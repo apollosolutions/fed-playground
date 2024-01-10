@@ -1,5 +1,5 @@
 extend schema
-    @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+    @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key", "@shareable", "@extends", "@external"])
 
 type Query {
     "The full list of locations presented by the Interplanetary Space Tourism department"
