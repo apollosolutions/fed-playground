@@ -1,1 +1,1 @@
-rover supergraph compose --config supergraph-config.yaml
+rover supergraph compose --config config/compose-config.yaml
