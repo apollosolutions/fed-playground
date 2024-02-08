@@ -26,3 +26,6 @@ yarn-error.log*
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+
+# GraphQL
+supergraph.graphql
