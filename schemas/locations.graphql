@@ -1,6 +1,6 @@
 extend schema
     @link(
-        url: "https://specs.apollo.dev/federation/v2.5",
+        url: "https://specs.apollo.dev/federation/v2.6",
         import: ["@key", "@shareable", "@extends", "@external"]
     )
 
@@ -18,5 +18,5 @@ type Location @key(fields: "id"){
     "A short description about the location"
     description: String!
     "The location's main photo as a URL"
-    photo: String!
+    photo(smallVersion: Boolean): String!
 }

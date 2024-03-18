@@ -1,7 +1,7 @@
 extend schema
     @link(
-        url: "https://specs.apollo.dev/federation/v2.5",
-        import: ["@key"]
+        url: "https://specs.apollo.dev/federation/v2.6",
+        import: ["@key", "@external", "@requires"]
     )
 
 type Query {
@@ -15,8 +15,9 @@ type Mutation {
 
 type Location @key(fields: "id") {
     id: ID!
+    photo(smallVersion: Boolean): String! @external
     "The calculated overall rating based on all reviews"
-    overallRating: Float
+    overallRating: Float @requires(fields: "photo(smallVersion: true)")
     "All submitted reviews about this location"
     reviewsForLocation: [Review]!
 }
