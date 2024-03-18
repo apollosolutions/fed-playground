@@ -1,1 +1,3 @@
-rover supergraph compose --config config/compose-config.yaml > supergraph.graphql
+set -e
+
+rover supergraph compose --config config/compose-config.yaml --output supergraph.graphql

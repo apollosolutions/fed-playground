@@ -1,4 +1,4 @@
-federation_version: =2.5.0
+federation_version: =2.7.0
 subgraphs:
   locations:
     routing_url: https://flyby-locations-sub.herokuapp.com/
